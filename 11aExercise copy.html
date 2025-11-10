@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Home Page - Pathfinder Insititute Myanmar</title>
+      <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+        <style>
+          .main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+          .header-the-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba (20, 28, 38, .2);
+  backdrop-filter: blur(10px);
+  border-bottom: rgb(191, 191, 189) 1px solid;
+}
+
+.left-section-header-with-searchbar {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.the-aboutus-container, .actual-aboutus-container {
+  display: flex;
+}
+
+.click-to-see-aboutus {
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.aboutus-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  justify-content: end;
+}
+
+.aboutus-text {
+  font-size: 14px;
+  margin-right: 10px;
+  transition: color ease-out .3s;
+}
+
+.aboutus-text:hover {
+  color: rgb(191, 191, 189);
+}
+
+.the-privacypolicy-container, .actual-privacypolocy-container {
+  display: flex;
+}
+
+.click-to-see-privacypolicy {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.privacypolicy-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  justify-content: end;
+}
+
+.privacypolicy-text {
+  font-size: 14px;
+  margin-right: 25px;
+  transition: color ease-out .3s;
+}
+
+.privacypolicy-text:hover {
+  color: rgb(191, 191, 189);
+}
+
+.middle-section-header-with-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+}
+
+.right-section-header-with-login-button {
+  flex: 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.the-schools-and-programs-container, .actual-schools-and-programs-container {
+  display: flex;
+}
+
+.the-schools-and-programs-container {
+  align-items: center;
+}
+
+.click-to-see-schools-and-programs {
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.schools-and-programs-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  justify-content: end;
+}
+
+.schools-and-programs-text {
+  font-size: 14px;
+  margin-left: 10px;
+  transition: color ease-out .3s;
+}
+
+.schools-and-programs-text:hover {
+  color: rgb(191, 191, 189);
+}
+
+.the-verfication-container, .actual-verfication-container {
+  display: flex;
+}
+
+.the-verfication-container {
+  align-items: center;
+}
+
+.click-to-see-verfication {
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+  margin-right: 100px;
+}
+
+.verfication-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  justify-content: end;
+}
+
+.verfication-text {
+  font-size: 14px;
+  margin-left: 25px;
+  transition: color ease-out .3s;
+}
+
+.verfication-text:hover {
+  color: rgb(191, 191, 189);
+}
+
+.nav-login-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex: 1;
+  margin-right: 50px;
+}
+
+.the-nav-login-button-container, .actual-nav-login-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.nav-click-to-login-page {
+  padding: 9px 18px;
+  background-color: #b7c0ce;
+  background: linear-gradient(to left, #b7c0ce 50%, transparent 50%) right;
+  background-size: 200% 100%;
+  border: 1px transparent solid;
+  border-radius: 45px;
+  color: #141C26;
+  text-decoration: none;
+  background-clip: padding-box;
+  overflow: hidden;
+  transition: background-position ease-out .5s, border ease-out .3s, color ease-out .3s;
+  cursor: pointer;
+  margin-left: 120px;
+}
+
+.nav-click-to-login-page:hover {
+  background-position: left;
+  border: 1px rgb(191, 191, 189) solid;
+  color: white;
+}
+
+.nav-login-icon-and-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 12px;
+}
+
+.nav-login-text {
+  font-size: 13px;
+}
+
+.nav-login-icon {
+  display: flex;
+  align-items: center;
+}
+
+          .introduction-and-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.left-container1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.Pathfinder-context-header {
+  margin: 0;
+}
+
+.the-context-header-container, .actual-context-header-container {
+  display: flex;
+}
+
+.the-context-header-container {
+  margin-bottom: 15px;
+}
+
+.the-blockquote-container, .actual-blockquote-container {
+  display: flex;
+  margin: 0;
+}
+
+blockquote {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px 25px;
+}
+
+.actual-learnmore-button-container, .the-learnmore-button-container {
+  display: flex;
+}
+
+.click-to-learnmore {
+  padding: 10px 20px;
+  color: #141C26;
+  background-color: #b7c0ce;
+  background: linear-gradient(to left, #b7c0ce 50%, transparent 50%) right;
+  background-size: 200% 100%;
+  text-decoration: none;
+  border: 1px transparent solid;
+  border-radius: 45px;
+  transition: background-position ease-out .6s, border ease-out .4s, color ease-out .4s;
+  cursor: pointer;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+
+.click-to-learnmore:hover {
+  background-position: left;
+  border: 1px rgb(191, 191, 189) solid;
+  color: white;
+}
+
+.learnmore-icon-and-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  justify-content: end;
+}
+
+.learnmore-text {
+  font-size: 14px;
+}
+
+.learnmore-icon {
+  display: flex;
+  align-items: center;
+}
+
+.the-login-button-container, .actual-login-button-container {
+  display: flex;
+}
+
+.click-to-login-page {
+  padding: 10px 20px;
+  background-color: #b7c0ce;
+  background: linear-gradient(to left, #b7c0ce 50%, transparent 50%) right;
+  background-size: 200% 100%;
+  border: 1px transparent solid;
+  border-radius: 45px;
+  color: #141C26;
+  text-decoration: none;
+  background-clip: padding-box;
+  overflow: hidden;
+  transition: background-position ease-out .5s, border ease-out .3s, color ease-out .3s;
+  cursor: pointer;
+  margin-right: 26px;
+}
+
+.click-to-login-page:hover {
+  background-position: left;
+  border: 1px rgb(191, 191, 189) solid;
+  color: white;
+}
+
+.login-icon-and-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 12px;
+}
+
+.login-text {
+  font-size: 14px;
+}
+
+.login-icon {
+  display: flex;
+  align-items: center;
+}
+
+.right-container1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+        </style>
+    </head>
+    <body style="background: #141C26;
+      background: linear-gradient(circle, rgba(20, 28, 38, 1) 0%, rgba(27, 45, 69, 1) 81%, rgba(21, 37, 56, 1) 91%, rgba(44, 51, 71, 1) 99%);
+      color: white;
+      font-family: 'Montserrat', sans-serif; padding-top: 40px; height: 1000em;">
+      <div class="container">
+        <div class="the-header">
+          <div class="header-the-container">
+
+            <div class="left-section-header-with-searchbar">
+
+              <div class="the-privacypolicy-container">
+                <div class="actual-the-privacypolicy-container">
+                  <a class="click-to-see-privacypolicy" href="#">
+                    <span class="privacypolicy-text-container">
+                      <span class="privacypolicy-text">Privacy Policy</span>
+                    </span>
+                </div>
+              </div>
+
+              <div class="the-aboutus-container">
+                <div class="actual-aboutus-container">
+                  <a class="click-to-see-aboutus" href="#">
+                    <span class="aboutus-text-container">
+                      <span class="aboutus-text">About Us</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+                
+            </div>
+            
+
+            <div class="middle-section-header-with-logo">
+              <a class="click-the-logo-to-homepage" href="11aExercise.html" type="image">
+                <img src="images/20250828_215205_0000-removebg-preview.png" alt="Pathfinder Institute Myanmar Logo" style="width: 38px; height: auto;">
+                </a>
+              </div>
+              
+              <div class="right-section-header-with-login-button">
+                
+              <div class="the-schools-and-programs-container">
+                <div class="actual-schools-and-programs-container">
+                  <a class="click-to-see-schools-and-programs" href="#">
+                    <span class="schools-and-programs-text-container">
+                      <span class="schools-and-programs-text">Schools & Programs</span>
+                    </span>
+                  </a>
+                </div>
+
+              </div>
+              
+              <div class="the-verfication-container">
+                <div class="actual-verfication-container">
+                  <a class="click-to-see-verfication" href="#">
+                    <span class="verfication-text-container">
+                      <span class="verfication-text">Verfication</span>
+                    </span>
+                  </a>
+                </div>
+
+              </div>
+
+              <div class="nav-login-button-container">
+                  <div class="container-nav-login-button">
+                    <div class="the-nav-login-button-container">
+                        <div class="actual-nav-login-button-container">
+                          <a class="nav-click-to-login-page" href="11bExercise.html" target="_blank" type="button">
+                            <span class="nav-login-icon-and-text-container">
+                              <span class="nav-login-icon">
+                                <i class="fa-solid fa-user" aria-hidden="true"></i>
+                              </span>
+                              <span class="nav-login-text">
+                                Login
+                              </span>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="main-container">
+
+          <div class="introduction-and-logo-container">
+            <div class="left-container1">
+  
+              <div class="the-context-header-container">
+                <div class="actual-context-header-container">
+                  <h2 class="Pathfinder-context-header" style=" letter-spacing: 1px;">Pathfinder Insititute Myanmar</h2>
+                </div>
+              </div>
+              <div class="the-blockquote-container">
+                <div class="actual-blockquote-container">
+                  <blockquote>
+                    <p align="Justify" style="margin: 0; width: 92%; line-height: 22px;">
+                      At Pathfinder Institute Myanmar, we believe in the transformative power of education to shape a brighter future for Myanmar.&nbsp;Join us in this journey towards a more educated, empowered, and democratic society.
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+
+              <div class="learnmore-and-login-button-container" style="display: flex; flex-direction: row; gap: 20px; align-items: center;">
+
+                <div class="the-learnmore-button-container">
+                  <div class="actual-learnmore-button-container">
+                    <a class="click-to-learnmore" href="https://pathfinder-mm.org/education/" type="button">
+                      <span class="learnmore-icon-and-text-container">
+                        <span class="learnmore-icon">
+                          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </span>
+                        <span class="learnmore-text">
+                          Learn More
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+  
+                <div class="the-login-button-container">
+                  <div class="actual-login-button-container">
+                    <a class="click-to-login-page" href="https://pathfinder-mm.org/portal/office/login/" type="button">
+                      <span class="login-icon-and-text-container">
+                        <span class="login-icon">
+                          <i class="fa-solid fa-user" aria-hidden="true"></i>
+                        </span>
+                        <span class="login-text">
+                          Login
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div> 
+            </div>
+
+            <div class="right-container1">
+              <img src="images/image.png" alt="Pathfinder Insititute Myanmar" class="Pathfinder-Logo" style="width: 375px; height: auto;">
+            </div>
+          </div>
+
+          </div>
+      </div>
+    </body>
+  </html>

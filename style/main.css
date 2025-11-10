@@ -1,0 +1,140 @@
+.main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.introduction-and-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.left-container1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.Pathfinder-context-header {
+  margin: 0;
+}
+
+.the-context-header-container, .actual-context-header-container {
+  display: flex;
+}
+
+.the-context-header-container {
+  margin-bottom: 15px;
+}
+
+.the-blockquote-container, .actual-blockquote-container {
+  display: flex;
+  margin: 0;
+}
+
+blockquote {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px 25px;
+}
+
+.actual-learnmore-button-container, .the-learnmore-button-container {
+  display: flex;
+}
+
+.click-to-learnmore {
+  padding: 10px 20px;
+  color: #141C26;
+  background-color: #b7c0ce;
+  background: linear-gradient(to left, #b7c0ce 50%, transparent 50%) right;
+  background-size: 200% 100%;
+  text-decoration: none;
+  border: 1px transparent solid;
+  border-radius: 45px;
+  transition: background-position ease-out .6s, border ease-out .4s, color ease-out .4s;
+  cursor: pointer;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+
+.click-to-learnmore:hover {
+  background-position: left;
+  border: 1px rgb(191, 191, 189) solid;
+  color: white;
+}
+
+.learnmore-icon-and-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  justify-content: end;
+}
+
+.learnmore-text {
+  font-size: 14px;
+}
+
+.learnmore-icon {
+  display: flex;
+  align-items: center;
+}
+
+.the-login-button-container, .actual-login-button-container {
+  display: flex;
+}
+
+.click-to-login-page {
+  padding: 10px 20px;
+  background-color: #b7c0ce;
+  background: linear-gradient(to left, #b7c0ce 50%, transparent 50%) right;
+  background-size: 200% 100%;
+  border: 1px transparent solid;
+  border-radius: 45px;
+  color: #141C26;
+  text-decoration: none;
+  background-clip: padding-box;
+  overflow: hidden;
+  transition: background-position ease-out .5s, border ease-out .3s, color ease-out .3s;
+  cursor: pointer;
+  margin-right: 26px;
+}
+
+.click-to-login-page:hover {
+  background-position: left;
+  border: 1px rgb(191, 191, 189) solid;
+  color: white;
+}
+
+.login-icon-and-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 12px;
+}
+
+.login-text {
+  font-size: 14px;
+}
+
+.login-icon {
+  display: flex;
+  align-items: center;
+}
+
+.right-container1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
