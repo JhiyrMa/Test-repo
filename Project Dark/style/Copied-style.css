@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+.login-page-container-x-3 {
+    background: linear-gradient(
+    180deg,
+    #10171f 60%,
+    rgba(255, 255, 255, 0.06) 100%);
+  backdrop-filter: blur(22px) saturate(180%);
+  -webkit-backdrop-filter: blur(22px) saturate(180%);
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45), 0 0 0 .5px rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 30px 60px 20px 60px;
+}
+
+.lower-formfill-x-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 16px;
+  background-color: tansparent;
+}
+
+.pathinder-logo-w-text-x-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.pathinder-logo-w-text-x-3 img {
+  width: 264.5px;
+  height: 96.6px;
+  margin-bottom: 30px;
+}
+
+.inputs-x-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.lower-formfill-x-3 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lower-formfill-x-3 input {
+  width: 380px;
+  padding: 12px 14px;
+  
+}
+
+.lower-formfill-x-3 input, select {
+  outline: none;
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px transparent solid;
+  border-radius: 10px;
+}
+
+.lower-formfill-x-3 input:focus, select:focus {
+  box-shadow: 0 0 0 3px rgba(1, 3, 97, 0.25);
+}
+
+.lower-formfill-x-3 input::placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+
+
+.lower-formfill-x-3 select {
+  width: 408px;
+  padding: 12px 14px 12px 10px;
+  margin-bottom: 20px;
+}
+
+.login-click-button-x-3 {
+  width: 400px;
+  padding: 12px 80px;
+  font-size: 16px;
+  background: linear-gradient(180deg, #ffffff, #f2f2f2);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  border: 1px transparent solid;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.login-click-button-x-3:hover {
+  transform: translateY(-1px);
+}
+
+.login-click-button-x-3:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.forgot-id-x-3 {
+  margin-top: 5px;
+}
+
+.forgot-id-x-3 a {
+  text-decoration: none;
+  color: white;
+}
+
+.forgot-id-x-3 a:hover {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.soical-media-accounts-x-3 a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px rgba(255, 255, 255, 0.2) solid;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 24px;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin: 30px 10px 0 0;
+  transition: background .2s ease;
+}
+
+.soical-media-accounts-x-3 a:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.login-to-portal-text-x-3 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+
+.footer-credit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 0 12px 0;
+  text-align: center;
+  background-color: transparent;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+
+}
+
+.footer-credit spam {
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .login-page-container-x-3 {
+    padding: 20px 40px 15px 40px;
+  }
+
+  .pathinder-logo-w-text-x-3 {
+    margin-bottom: 30px;
+  }
+  
+  .login-to-portal-text-x-3 {
+    font-size: 22px;
+  }
+
+  .pathinder-logo-w-text-x-3 img {
+  width: 230px;
+  height: 84px;
+  margin-bottom: 20px;
+  }
+
+.inputs-x-3 {
+  margin-bottom: 60px;
+}
+
+.lower-formfill-x-3 input {
+  width: 340px;
+}
+
+.lower-formfill-x-3 select {
+  width: 360px;
+  outline: none;
+  margin-bottom: 16px;
+}
+
+.login-click-button-x-3 {
+  width: 360px;
+  margin-bottom: 16px;
+}
+.forgot-id-x-3 {
+  margin-top: 4px;
+}
+
+.soical-media-accounts-x-3 a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 22px;
+  border: 1px white solid;
+  border-radius: 14px;
+  text-align: center;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  margin: 25px 8px 0 0;
+}
+
+}
