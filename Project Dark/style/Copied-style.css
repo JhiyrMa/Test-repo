@@ -176,7 +176,7 @@ body {
   font-size: 13px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1366px) {
   .login-page-container-x-3 {
     padding: 20px 40px 15px 40px;
   }

@@ -11,20 +11,23 @@ body {
   display: flex;
   flex-direction: row;
   position: relative;
-  width: 1380px;
+  width: 100%;
+  max-width: 1380px;
   height: 680px;
 }
 
 .right-side-formfill-x-2 {
-  display: flex;
   z-index: 4;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: absolute;
   border-top-right-radius: 22px;
   border-bottom-right-radius: 22px;
+  top: 0;
   right: 0;
+  bottom: 0;
   width: 40%;
   height: 100%;
   border-right: 1px solid rgba(255, 255, 255, 0.18);
@@ -127,12 +130,13 @@ body {
 }
 
 .forgot-id-x-2 {
-  margin-top: 5px;
+  margin: 5px 0 10px 0;
 }
 
 .forgot-id-x-2 a {
   text-decoration: none;
   color: white;
+  font-size: 16px;
   transition: font-weight .17s ease;
 }
 
@@ -155,8 +159,9 @@ body {
   width: 60px;
   height: 60px;
   line-height: 60px;
-  margin: 10px 10px 40px 0;
+  margin: 10px 10px 36px 0;
   transition: background .2s ease;
+  visibility: hidden;
 }
 
 .soical-media-accounts-x-2 a:hover {
@@ -190,9 +195,9 @@ body {
 
 .left-side-login-to-portal-text-x-2 {
   position: absolute;
-  top: 50%;
+  top: 0;
   right: 50%;
-  bottom: 50%;
+  bottom: 0;
   left: 50%;
   display: flex;
   align-items: center;
@@ -230,6 +235,7 @@ body {
   height: 60px;
   margin: 10px 10px 0 0;
   transition: background .2s ease;
+  visibility: hdden;
 }
 
 .left-soical-media-accounts-x-2 a:hover {
@@ -243,9 +249,10 @@ body {
   left: 0;
   position: absolute;
   width: 100%;
-  height: 682px;
+  height: 100%;
   border-top-left-radius: 22px;
   border-bottom-left-radius: 22px;
+  visibility: none;
 }
 
 .footer-credit {
@@ -262,4 +269,93 @@ body {
   font-size: 13px;
 }
 
+@media screen and (max-width: 1366px) {
+  /*container size is reduced by 25%*/
+  .login-page-container-x-2 {
+    width: 1035px;
+    height: 544px; /*container height is reduced by 20%*/
+  }
 
+  /*element sizes are reduced by 20%*/
+  .pathinder-logo-w-text-x-2 {
+    margin-bottom: 32px;
+    font-size: 20px;
+  }
+
+   .pathinder-logo-w-text-x-2 img {
+    margin-bottom: 10px;
+    width: 184px;
+    height: 67px;
+  }
+
+  .inputs-x-2 {
+    gap: 16px;
+  }
+
+  .right-side-formfill-x-2 input {
+    width: 304px;
+    padding: 9.6px 0 9.6px 16px;
+    font-size: 13px;
+  }
+
+  .right-side-formfill-x-2 select {
+    width: 320px;
+    padding: 9.6px 0 9.6px 13px;
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+
+  .login-click-button-x-2 {
+    width: 320px;
+    padding: 9.6px 64px;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .forgot-id-x-2 {
+    margin: 3px 0 6px 0;
+  }
+
+  .forgot-id-x-2 a {
+    font-size: 14px;
+  }
+
+  .forgot-id-x-2 a:hover {
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+  .soical-media-accounts-x-2 a {
+    font-size: 19px;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    margin: 8px 8px 14px 0;
+  }
+
+  .footer-credit {
+    padding: 7.4px 0 7.4px 0;
+  }
+
+  .footer-credit spam {
+    font-size: 11px;
+  }
+
+  .left-side spam {
+    font-size: 27px;
+  }
+
+  .left-soical-media-accounts-x-2 {
+    bottom: 16px;
+  }
+
+  .left-soical-media-accounts-x-2 a {
+    font-size: 19px;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    margin: 8px 8px 14px 0;
+  }
+
+}
